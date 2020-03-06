@@ -1,0 +1,32 @@
+ class Threaddemo extends Thread{
+   Threaddemo()
+   {
+   }
+public void run()
+{
+        int n1=0;
+        int n2=1;
+        int n=9;
+        int c;
+        System.out.print(n1+" "+n2);
+         System.out.println();
+     for(int i=0;i<=9;i++)
+     {
+         c=n1+n2;
+         n1=n2;
+         n2=c;
+         System.out.println(c);
+     }
+    
+     }
+     }
+     
+     public class Thread1{
+     public static void main(String args[]){
+         Threaddemo fb=new Threaddemo();
+         fb.setName("Fibinoci");
+         fb.run();
+     }
+     
+     }
+     
